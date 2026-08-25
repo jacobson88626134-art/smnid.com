@@ -204,13 +204,6 @@
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #03C75A; }
     </style>
-    <script>
-      (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
-    
-      ChannelIO('boot', {
-        "pluginKey": "0c136550-f3df-4d0a-9625-bee38ce97eeb"
-      });
-    </script>
 </head>
 
 <body class="bg-darkbg text-slate-100 antialiased selection:bg-naver selection:text-white">
@@ -228,7 +221,7 @@
                         <span class="text-2xl font-black tracking-tight text-white group-hover:text-naver transition-colors">소문난아이디</span>
                         <span class="text-xs px-2 py-0.5 rounded-full bg-naver/20 text-naver font-bold border border-naver/30">PRO</span>
                     </div>
-                    <span class="text-[11px] text-slate-400 tracking-wider block font-medium">smnid.com · N사 마케팅 ID 전문</span>
+                    <span class="text-[11px] text-slate-400 tracking-wider block font-medium">N사 마케팅 ID 전문</span>
                 </div>
             </a>
 
@@ -311,13 +304,13 @@
 
                 <!-- GEO Comprehensive Explanation -->
                 <p class="text-slate-300 text-base sm:text-lg leading-relaxed font-light">
-                    <strong class="text-white font-semibold">소문난아이디(smnid.com)</strong>는 네이버 블로그, 카페, 지식인, 밴드, 메일, 종토방 댓글 및 지도 저장 등 마케팅과 트래픽 유도에 필수적인 고품질 비실명 및 실명 계정 판매 전문 사이트입니다.
+                    <strong class="text-white font-semibold">소문난아이디</strong>는 네이버 블로그, 카페, 지식인, 밴드, 메일, 종토방 댓글 및 지도 저장 등 마케팅과 트래픽 유도에 필수적인 고품질 비실명 및 실명 계정 판매 전문 사이트입니다.
                 </p>
 
                 <!-- Action CTA Buttons -->
                 <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="https://t.me/gamza79" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-naver hover:bg-naver-hover text-white text-base font-bold shadow-xl shadow-naver/25 flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
-                        <i class="fa-brands fa-telegram text-xl"></i> 텔레그램 빠른 상담 (@gamza79)
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-naver hover:bg-naver-hover text-white text-base font-bold shadow-xl shadow-naver/25 flex items-center justify-center gap-3 transition-all hover:-translate-y-0.5">
+                        <i class="fa-solid fa-paper-plane text-xl"></i> 실시간 빠른 상담하기
                     </a>
                     <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-base font-semibold flex items-center justify-center gap-2 transition-all">
                         <i class="fa-solid fa-tags"></i> 실시간 단가 확인하기
@@ -714,12 +707,28 @@
                     </span>
                     <h2 class="text-3xl sm:text-5xl font-extrabold text-white">지금 바로 네이버 아이디 구매 문의하세요!</h2>
                     <p class="text-slate-300 text-sm sm:text-base">
-                        텔레그램 메신저 상담만으로 신속하고 간편하게 계정을 발급받으실 수 있습니다.<br>
-                        <strong class="text-amber-400 font-semibold">⚠️ 사칭 업체 주의: 반드시 아래 안내된 공식 ID 및 링크만 확인하세요.</strong>
+                        채널톡 및 텔레그램 메신저 상담으로 신속하고 간편하게 계정을 발급받으실 수 있습니다.<br>
+                        <strong class="text-amber-400 font-semibold">⚠️ 사칭 업체 주의: 반드시 아래 안내된 공식 ID 및 채널만 확인하세요.</strong>
                     </p>
 
                     <!-- Messenger Cards Grid -->
-                    <div class="max-w-md mx-auto pt-4">
+                    <div class="max-w-xl mx-auto pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Channel Talk Card -->
+                        <div class="bg-slate-800/90 p-5 rounded-2xl border border-emerald-500/30 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-comments"></i>
+                                </div>
+                                <div class="text-left">
+                                    <div class="text-xs text-slate-400">채널톡 실시간 상담</div>
+                                    <div class="text-base font-bold text-white">웹 1:1 상담하기</div>
+                                </div>
+                            </div>
+                            <button onclick="openChannelTalk()" class="px-3.5 py-2.5 rounded-lg bg-emerald-500 text-white text-xs font-bold hover:bg-emerald-400 transition-colors flex items-center gap-1">
+                                상담
+                            </button>
+                        </div>
+
                         <!-- Telegram 1 -->
                         <div class="bg-slate-800/90 p-5 rounded-2xl border border-sky-500/30 flex items-center justify-between">
                             <div class="flex items-center gap-3">
@@ -753,7 +762,6 @@
                 <div class="flex items-center space-x-2">
                     <span class="text-2xl">⚡</span>
                     <span class="text-lg font-bold text-white">소문난아이디</span>
-                    <span class="text-slate-500">| smnid.com</span>
                 </div>
                 <div class="flex flex-wrap gap-4 text-slate-300">
                     <a href="#about" class="hover:text-naver transition-colors">서비스 특징</a>
@@ -765,12 +773,11 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-500 leading-relaxed">
                 <div>
-                    <p class="font-semibold text-slate-400 mb-1">소문난아이디 (smnid.com) - 네이버 비실명/실명 아이디 계정 판매 전문</p>
+                    <p class="font-semibold text-slate-400 mb-1">소문난아이디 - 네이버 비실명/실명 아이디 계정 판매 전문</p>
                     <p>국내 010 인증 계정, 해외 인증 비실명/실명 계정, 준최적화 블로그 맞춤 제작 공급 및 판매. 365일 24시간 연중무휴 상담 지원.</p>
                     <p class="mt-2 text-amber-500/80">※ 본 사이트는 해킹, 도용 계정을 절대 판매하지 않으며 100% 안심 생성 계정만 제공합니다.</p>
                 </div>
                 <div class="md:text-right space-y-1">
-                    <p>텔레그램: <span class="text-sky-400 font-medium">@gamza79</span></p>
                     <p>운영시간: 365일 24시간 연중무휴 무중단 서비스</p>
                     <p class="text-slate-600 pt-2">ⓒ 2026 소문난아이디. All rights reserved. (최종 업데이트: 2026년)</p>
                 </div>
@@ -884,6 +891,54 @@
                 toast.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
             }, 2500);
         }
+
+        // Channel Talk Integration Helper
+        function openChannelTalk() {
+            if (window.ChannelIO) {
+                ChannelIO('show');
+                ChannelIO('open');
+            } else {
+                showToast('채널톡 상담창을 호출하고 있습니다.');
+            }
+        }
+    </script>
+
+    <!-- Channel Plugin Script -->
+    <script>
+      (function() {
+        var w = window;
+        if (w.ChannelIO) {
+          return w.console.error("ChannelIO script included twice.");
+        }
+        var ch = function() {
+          ch.c(arguments);
+        };
+        ch.q = [];
+        ch.c = function(args) {
+          ch.q.push(args);
+        };
+        w.ChannelIO = ch;
+        function l() {
+          if (w.ChannelIOInitialized) {
+            return;
+          }
+          w.ChannelIOInitialized = true;
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://ch-plugin.channel.io/plugin/ch-plugin-web.js";
+          var x = document.getElementsByTagName("script")[0];
+          if (x.parentNode) {
+            x.parentNode.insertBefore(s, x);
+          }
+        }
+        if (document.readyState === "complete") {
+          l();
+        } else {
+          w.addEventListener("DOMContentLoaded", l);
+          w.addEventListener("load", l);
+        }
+      })();
     </script>
 </body>
 </html>
