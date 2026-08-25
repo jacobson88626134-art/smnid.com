@@ -204,6 +204,13 @@
         ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #03C75A; }
     </style>
+    <script>
+      (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+    
+      ChannelIO('boot', {
+        "pluginKey": "0c136550-f3df-4d0a-9625-bee38ce97eeb"
+      });
+    </script>
 </head>
 
 <body class="bg-darkbg text-slate-100 antialiased selection:bg-naver selection:text-white">
@@ -701,7 +708,7 @@
     <section id="contact" class="py-16 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="glass-panel rounded-3xl p-8 sm:p-12 border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950/40 relative overflow-hidden">
-                <div class="relative z-10 text-center max-w-3xl mx-auto space-y-6">
+                <div class="relative z-10 text-center max-w-4xl mx-auto space-y-6">
                     <span class="px-4 py-1.5 rounded-full bg-naver/20 text-naver text-xs font-bold border border-naver/30 inline-block">
                         365일 24시간 실시간 즉시 응대
                     </span>
@@ -712,7 +719,7 @@
                     </p>
 
                     <!-- Messenger Cards Grid -->
-                    <div class="max-w-xl mx-auto pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="max-w-3xl mx-auto pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <!-- Channel Talk Card -->
                         <div class="bg-slate-800/90 p-5 rounded-2xl border border-emerald-500/30 flex items-center justify-between">
                             <div class="flex items-center gap-3">
